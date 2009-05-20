@@ -1,0 +1,26 @@
+= Moonshine_ArMailer
+
+=== A plugin for Moonshine[http://github.com/railsmachine/moonshine]
+
+A plugin for installing and managing ar_mailer. By default, it installs the adzap-ar_mailer[http://github.com/adzap/ar_mailer]
+gem, creates an init script, and configures the mailer for your app.
+
+You can customize the options using the <tt><configure/tt> method.
+  
+    configure( 
+      'your_app' => { 'pidfile' => '/var/run/ar_mailer.your_app.pid', 'environment' => 'development' }
+      'other_app' => { 
+        'chdir' => '/srv/other_app/current', 
+        'environment' => 'production' 
+      }
+    )
+
+This plugin works great with the moonshine_god[http://github.com/railsmachine/moonshine_god] plugin.
+Copy ar_sendmail.god from this plugin's templates directory into your config/god directory.
+
+=== Instructions
+
+* <tt>script/plugin install git://github.com/railsmachine/moonshine_ar_mailer.git</tt>
+* Include the plugin and recipe in your Moonshine manifest
+    plugin :ar_mailer
+    recipe :ar_mailer
