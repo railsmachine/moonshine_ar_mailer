@@ -12,7 +12,7 @@ module Moonshine
     def ar_mailer(hash = {})
 
       package hash.delete(:gem) || 'ar_mailer',
-        :ensure => :installed,
+        :ensure => hash.delete(:gem_version) || :installed,
         :provider => :gem
 
       options = {
