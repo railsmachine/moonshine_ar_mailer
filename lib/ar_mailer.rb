@@ -11,7 +11,9 @@ module ArMailer
   #  recipe :ar_mailer
   def ar_mailer(hash = {})
 
-    gem(hash.delete(:gem) || 'ar_mailer')
+    package hash.delete(:gem) || 'ar_mailer',
+      :ensure => :installed,
+      :provider => :gem
 
     options = {
       configuration[:application] => {
