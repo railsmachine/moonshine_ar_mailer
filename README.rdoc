@@ -7,11 +7,13 @@ gem, creates an init script, and configures the mailer for your app.
 
 You can customize the options using the <tt><configure/tt> method.
   
-    configure( 
-      'your_app' => { 'pidfile' => '/var/run/ar_mailer.your_app.pid', 'environment' => 'development' }
-      'other_app' => { 
-        'chdir' => '/srv/other_app/current', 
-        'environment' => 'production' 
+    configure(
+      :ar_mailer => {
+        'your_app' => { 'pidfile' => '/var/run/ar_mailer.your_app.pid', 'environment' => 'development' }
+        'other_app' => {
+          'chdir' => '/srv/other_app/current',
+          'environment' => 'production'
+        }
       }
     )
 
