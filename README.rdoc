@@ -21,6 +21,5 @@ Copy ar_sendmail.god from this plugin's templates directory into your config/god
 === Instructions
 
 * <tt>script/plugin install git://github.com/railsmachine/moonshine_ar_mailer.git</tt>
-* Include the plugin and recipe in your Moonshine manifest
-    plugin :ar_mailer
+* Include the recipe in your Moonshine manifest
     recipe :ar_mailer

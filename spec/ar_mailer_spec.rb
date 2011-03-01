@@ -1,7 +1,6 @@
 require File.join(File.dirname(__FILE__), 'spec_helper.rb')
 
 class ArMailerManifest < Moonshine::Manifest
-  plugin :ar_mailer
 end
 
 describe "A manifest with the ArMailer plugin" do

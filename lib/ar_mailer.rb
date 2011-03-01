@@ -7,7 +7,6 @@ module ArMailer
   #
   # Then include the plugin and call the recipe(s) you need:
   #
-  #  plugin :ar_mailer
   #  recipe :ar_mailer
   def ar_mailer(hash = {})
 
