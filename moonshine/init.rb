@@ -1,3 +1,3 @@
-require "#{File.dirname(__FILE__)}/../lib/ar_mailer.rb"
+require "#{File.dirname(__FILE__)}/../lib/moonshine/ar_mailer.rb"
 
-include ArMailer
+include Moonshine::ArMailer
