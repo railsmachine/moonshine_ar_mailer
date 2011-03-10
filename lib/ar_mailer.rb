@@ -11,7 +11,7 @@ module ArMailer
   #  recipe :ar_mailer
   def ar_mailer(hash = {})
 
-    gem(hash.delete(:gem) || 'ar_mailer')
+    gem(hash.delete(:gem) || 'adzap-ar_mailer')
 
     options = {
       configuration[:application] => {
