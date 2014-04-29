@@ -24,3 +24,7 @@ Copy ar_sendmail.god from this plugin's templates directory into your config/god
 * Include the plugin and recipe in your Moonshine manifest
     plugin :ar_mailer
     recipe :ar_mailer
+
+=== Copyright
+
+Unless otherwise specified, all content copyright (C) 2014, Rails Machine
